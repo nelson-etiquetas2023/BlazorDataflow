@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fpmghcKDOBGrkj48FTlSnuqN+iGBLU4SkbFkoCRT5zA=",
+  "Source": "Dataflow.Server",
+  "BasePath": "_content/Dataflow.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

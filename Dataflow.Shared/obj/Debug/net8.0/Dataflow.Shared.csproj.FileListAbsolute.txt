@@ -1,0 +1,11 @@
+C:\BlazorDataflow\Dataflow.Shared\bin\Debug\net8.0\Dataflow.Shared.deps.json
+C:\BlazorDataflow\Dataflow.Shared\bin\Debug\net8.0\Dataflow.Shared.dll
+C:\BlazorDataflow\Dataflow.Shared\bin\Debug\net8.0\Dataflow.Shared.pdb
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.AssemblyInfoInputs.cache
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.AssemblyInfo.cs
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.csproj.CoreCompileInputs.cache
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.dll
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\refint\Dataflow.Shared.dll
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.pdb
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\ref\Dataflow.Shared.dll
