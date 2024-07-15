@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\BlazorDataflow\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedHeight": 312,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Dataflow.Client\\wwwroot\\index.html",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\wwwroot\\index.html",
+              "RelativeToolTip": "Dataflow.Client\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-15T20:32:13.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Weather.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Weather.razor",
+              "RelativeToolTip": "Dataflow.Client\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T20:31:21.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Home.razor",
+              "RelativeToolTip": "Dataflow.Client\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T20:25:11.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Counter.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "Dataflow.Client\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T20:31:07.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Control.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Control.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
+              "RelativeToolTip": "Dataflow.Client\\Pages\\Control.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T20:30:37.731Z",
+              "EditorCaption": ""
             }
           ]
         },

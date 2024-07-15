@@ -1,13 +1,195 @@
 ﻿@page "/control"
 @inject SweetAlertService Swal
+<PageTitle>Control de Asistencia</PageTitle>
+<div class="container">
+	<!-- HEAD PAGE-->
+	<div class="row">
+		<div class="col" id="head-page-control" style="display:flex; align-items: center;">
+			<i class="bi-alarm me-2" style="font-size: 2rem; color: cornflowerblue;"></i>
+			<h3 class="my-4">Control de Asistencia</h3><br />
+		</div>
+	</div>
+	<!-- FIN HEAD PAGE -->
+	<!-- BLOQUE DE FECHA -->
+	<div class="row p-3" style="background-color:#e3f2fd">
+		<div class="col">
+			<i class="bi bi-calendar-date"></i>
+			<strong>Parametros de Fecha: </strong>
+			<div class="my-3">
+				<div style="display:flex; align-items:center;">
+					<h5 class="fs-6">Fecha Inicio:</h5>
+					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" /><input @bind="startDate" @bind:format="yyyy-MM-dd" type="date" class="form-control my-3" />
+				</div>
+				<div style="display:flex; align-items:center;">
+					<h5 class="fs-6">Fecha Final:</h5>
+					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" /><input @bind="endDate" @bind:format="yyyy-MM-dd" type="date" class="form-control" /><br />
+				</div>
+			</div>
+			<button class="btn btn-primary" @onclick="LoadData"><i class="bi bi-database-fill-down me-2"></i>Cargar Datos</button><br />
+		</div>
+	</div>
+	<!-- FIN DE BLOQUE DE FECHA-->
+	<!-- HEAD APARTADO DE CONTROL DE ASISTENCIA -->
+	<div class="row bg-black my-4 p-1" style="height:30px;" id="head-control-asistencia">
+		<div class="col">
+			<h5 class="text-center fs-5 fw-bold" style="color: white;">Reporte de Asistencia de Personal</h5><br />
+		</div>
+	</div>
+	<!-- FIN APARTADO DEL CONTROL DE ASISTENCIA -->
+	<!--NAVBAR DE GRID DE ASISTENCIA-->
+	<div class="container-fluid my-5" style="display:flex;flex-wrap:nowrap;background-color: #e3f2fd;height:60px;align-items:center">
+		<button class="btn btn-primary me-2" @onclick="createExcel"><i class="bi bi-file-earmark-spreadsheet me-2"></i>Hoja Excel</button>
+		<button class="btn btn-primary me-2" @onclick="viewReports"><i class="bi bi-printer-fill me-2"></i>Reportes</button>
+		<button class="btn btn-primary" @onclick="notificationsArea"><i class="bi bi-bell-fill me-2"></i>Notificaciones</button>
 
-<h3>Control de Asistencia</h3>
-<button class="btn btn-primary" @onclick="LoadData">SweetAler2</button>
-<i class="bi-alarm" style="font-size: 2rem"></i>
+		<input class="form-control"
+			   type="search"
+			   style="width:300px;margin-left: auto"
+			   placeholder="Introduzca palabra clave a buscar" />
+
+		<button class="mx-2 btn btn-warning" @onclick="searchData"><i class="bi bi-search me-2"></i>Buscar</button>
+	</div>
+	<!--FIN DEL NAVBAR DEL GRID DE ASISTENCIA-->
+	<!-- TABLA DE DATOS-->
+	<table class="table table-sm" border="1" width="100%" style="white-space: nowrap">
+		<thead>
+			<tr>
+				<th style="width:20px;">It.</th>
+				<th style="width:50px;">Horarios</th>
+				<th>Inicio</th>
+				<th>Final</th>
+				<th>Fecha</th>
+				<th>Dia</th>
+				<th>m1</th>
+				<th>m2</th>
+				<th>m3</th>
+				<th>m4</th>
+				<th>ponches</th>
+				<th class="text-center">tardanza</th>
+				<th>temprano</th>
+				<th>Salario</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--Menu de acciones por Empleado-->
+			<tr>
+				<td colspan="10" class="p-3" style="font-weight:600; background-color: #d8d8d8;">
+					Id: 150 - Nombre empleado: Nelson Pino - Departamento: Sistemas.
+				</td>
+
+				<td colspan="4" class="text-center">
+					<a class="me-2" href="#" @onclick="@actionGetNotesEmployee" @onclick:preventDefault="true" @onclick:stopPropagation="true"><i class="bi bi-pencil me-1"></i>Notas</a>
+					<a class="me-2" href="#" @onclick="@actionGetNotificationsEmployee" @onclick:preventDefault><i class="bi bi-envelope-arrow-down me-1"></i>Notificar</a>
+					<a class="me-2" href="#" @onclick="@actionGetParametersEmployee" @onclick:preventDefault><i class="bi bi-gear me-1"></i>Parametro</a>
+				</td>
+			</tr>
+			<!--Fin del menu de acciones por empleado-->
+			<tr>
+				<td>1</td>
+				<td>Horario de Oficina</td>
+				<td>8:00 a.m.</td>
+				<td>18:00 p.m.</td>
+				<td>01-07-2024</td>
+				<td>Lunes</td>
+				<td>6:58 a.m.</td>
+				<td>12:45 p.m.</td>
+				<td>15:14 p.m.</td>
+				<td>18:30 p.m.</td>
+				<td class="text-center">4</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td>1500$</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Horario de Oficina</td>
+				<td>8:00 a.m.</td>
+				<td>18:00 p.m.  </td>
+				<td>02-07-2024</td>
+				<td>Martes</td>
+				<td>7:30 a.m.</td>
+				<td>12:51 p.m.</td>
+				<td>15:20 p.m.</td>
+				<td>18:45 p.m.</td>
+				<td class="text-center">4</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td>1500$</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Horario de Oficina</td>
+				<td>8:00 a.m.</td>
+				<td>18:00 p.m.  </td>
+				<td>03-07-2024</td>
+				<td>Miercoeles</td>
+				<td>7:45 a.m.</td>
+				<td>12:48 p.m.</td>
+				<td>15:08 p.m.</td>
+				<td>18:51 p.m.</td>
+				<td class="text-center">4</td>
+				<td class="text-center">1</td>
+				<td class="text-center">3</td>
+				<td>1500$</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="10" class="p-3" style="font-weight:600; background-color: #d8d8d8;">resumen sub-totales de : Nelson Pino.</th>
+				<th class="text-center">133</th>
+				<th class="text-center">14</th>
+				<th class="text-center">8</th>
+			</tr>
+		</tfoot>
+	</table>
+	<!--FIN DE LA TABLA DE DATOS-->
+</div>
 
 @code {
-    private void LoadData()
-    {
-        Swal.FireAsync("Carga de Datos...");
-    }
+	private DateTime startDate =
+	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+
+	private DateTime endDate =
+	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddDays(-1);
+
+	private void LoadData()
+	{
+		Swal.FireAsync("Carga de Datos...");
+	}
+
+	private void searchData()
+	{
+		Swal.FireAsync("Buscando los datos...");	
+	}
+
+	private void createExcel()
+	{
+		Swal.FireAsync("creacion de Hoja de Excel...");	
+	}
+
+	private void viewReports()
+	{
+		Swal.FireAsync("Generacion de Reportes...");
+	}
+
+	private void notificationsArea()
+	{
+		Swal.FireAsync("Area de Notificaciones...");	
+	}
+
+	private void actionGetNotesEmployee()
+	{
+		Swal.FireAsync("Agregar notas al empleado...");	
+	}
+
+	private void actionGetNotificationsEmployee()
+	{
+		Swal.FireAsync("Agregar notificacion al los empleados...");	
+	}
+
+	private void actionGetParametersEmployee()
+	{
+		Swal.FireAsync("Configurar parametros de empleados...");
+	}
+
 }
