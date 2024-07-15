@@ -1036,3 +1036,12 @@ C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\CurrieTechnologies.Razor.Swee
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\compressed\oyet2lk2x0.gz
 C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\libman.json
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\Dataflow.Shared.pdb
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\Dataflow.Shared.wasm
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\Dataflow.Shared.wasm.gz
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\Dataflow.Shared.pdb.gz
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\Dataflow.Shared.dll
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\Dataflow.Shared.pdb
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\webcil\Dataflow.Shared.wasm
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\compressed\hrmxz1jo05.gz
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\compressed\p6fy13dl60.gz

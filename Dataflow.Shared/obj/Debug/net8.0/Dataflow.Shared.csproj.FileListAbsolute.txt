@@ -9,3 +9,4 @@ C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.dll
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\refint\Dataflow.Shared.dll
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.pdb
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\ref\Dataflow.Shared.dll
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.sourcelink.json
