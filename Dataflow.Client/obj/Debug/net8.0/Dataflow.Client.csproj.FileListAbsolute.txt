@@ -1035,3 +1035,4 @@ C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\CurrieTech
 C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\compressed\oyet2lk2x0.gz
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\libman.json
