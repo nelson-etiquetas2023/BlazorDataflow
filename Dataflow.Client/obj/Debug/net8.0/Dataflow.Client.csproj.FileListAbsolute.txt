@@ -1029,3 +1029,9 @@ C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\Dataflow.Client.dll
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\refint\Dataflow.Client.dll
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\Dataflow.Client.pdb
 C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\ref\Dataflow.Client.dll
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\Dataflow.Client.sourcelink.json
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm.gz
+C:\BlazorDataflow\Dataflow.Client\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
+C:\BlazorDataflow\Dataflow.Client\obj\Debug\net8.0\compressed\oyet2lk2x0.gz

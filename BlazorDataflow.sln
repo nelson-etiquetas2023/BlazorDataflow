@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataflow.Client", "Dataflow.Client\Dataflow.Client.csproj", "{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dataflow.Client", "Dataflow.Client\Dataflow.Client.csproj", "{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataflow.Server", "Dataflow.Server\Dataflow.Server.csproj", "{53254BB0-AD7B-4121-8D86-FB777E738748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dataflow.Server", "Dataflow.Server\Dataflow.Server.csproj", "{53254BB0-AD7B-4121-8D86-FB777E738748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataflow.Shared", "Dataflow.Shared\Dataflow.Shared.csproj", "{1489FE3B-8F15-4F53-93AA-209DF3AA02AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dataflow.Shared", "Dataflow.Shared\Dataflow.Shared.csproj", "{1489FE3B-8F15-4F53-93AA-209DF3AA02AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

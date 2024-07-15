@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Dataflow.Client",
   "resources": {
-    "hash": "sha256-IZH3fUPXYOhuYmuzRsdPiLG/yNZCK/1OghDe8jg6BtY=",
+    "hash": "sha256-o6y7PBk1a+bekMRRf88qorQZgmkNNfBSNVFeSaGmeB0=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.y5kanstr8i.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -17,6 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-tZ3Z0q6xQTgUxlWgiWvzS4SBQeBqETtRGtUWvVaU31w=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-O1efzZ+VlmJ3lOWndJZV5tR5TGF3PS5viT8tqgf8wRU=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-jF61/tMVhyfIJeua/KURR4OBR1xOxFpZGWa/OvX+Juk=",
@@ -208,10 +209,10 @@
       "mscorlib.wasm": "sha256-fLbZiSHBNdpHoh4EgRqMaNP5NQyIK5TEj6AXFLqo8m8=",
       "netstandard.wasm": "sha256-d4xbAE8qrKq5euUoZHPO+jkYPjlCYBzUew45MKsYKic=",
       "System.Private.CoreLib.wasm": "sha256-8yi6NcX1lkNQgV4WKjnMBYIZyKh4P+OXnXVQmgxGZD4=",
-      "Dataflow.Client.wasm": "sha256-QzWCejqfHHInc7Z9e0RwHqGxHZ/0Y+/J3wOaG+qk1/E="
+      "Dataflow.Client.wasm": "sha256-qH6Sm6s5a9+EMavUZU4IjTedEULtHBodGX9+aq60d28="
     },
     "pdb": {
-      "Dataflow.Client.pdb": "sha256-JYE01sg03BpUBFusDxkuKKyOy8Fm0XIryad+QveLbLo="
+      "Dataflow.Client.pdb": "sha256-o4Fp65LMXNQcFeWcFERkIGbznp7iW7s8E0EJ9cJisbA="
     }
   },
   "cacheBootResources": true,

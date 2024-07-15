@@ -1,0 +1,12 @@
+﻿@page "/control"
+@inject SweetAlertService Swal
+
+<h3>Control de Asistencia</h3>
+<button class="btn-primary" @onclick="LoadData">SweetAler2</button>
+
+@code {
+    private void LoadData()
+    {
+        Swal.FireAsync("Carga de Datos...");
+    }
+}
