@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Dataflow.Client",
   "resources": {
-    "hash": "sha256-VGqBHjqZQBH2Stx6087XdDd5evEwHNEGbC2GKvg/uKU=",
+    "hash": "sha256-0PaGnvOqE7kMB+0MEZbtDtG3G9+ny/bxzljnr05zf+M=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.y5kanstr8i.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -209,12 +209,12 @@
       "mscorlib.wasm": "sha256-fLbZiSHBNdpHoh4EgRqMaNP5NQyIK5TEj6AXFLqo8m8=",
       "netstandard.wasm": "sha256-d4xbAE8qrKq5euUoZHPO+jkYPjlCYBzUew45MKsYKic=",
       "System.Private.CoreLib.wasm": "sha256-8yi6NcX1lkNQgV4WKjnMBYIZyKh4P+OXnXVQmgxGZD4=",
-      "Dataflow.Shared.wasm": "sha256-RznvZqY6zPvIrbvgVMeea6ps9tkWG18SxQ0pb1oMOI8=",
-      "Dataflow.Client.wasm": "sha256-uynzoCrbXXYsH6voE8RInV/LBvqb2reLmtqyMiPJOxU="
+      "Dataflow.Shared.wasm": "sha256-V6KZkPnN15k8u5TyWDov72OeNSampU+/Fxo5xYw6hqk=",
+      "Dataflow.Client.wasm": "sha256-cNCPJSwbBcPuChBll1ZgpSAzAvsGZoFiFCjGhL7v/WY="
     },
     "pdb": {
-      "Dataflow.Shared.pdb": "sha256-mK4+jOx6H6UtkSoIRXZWsNzAnan6JPlz6PRezTKQj3s=",
-      "Dataflow.Client.pdb": "sha256-1JhruuTijEEUOGNtvj02UvbicJWDfn/xmatDMUiGzvI="
+      "Dataflow.Shared.pdb": "sha256-P1RH1ZBzpOnuYBEw+2q6m8V0MzIMRR/jytst+Mbjuz8=",
+      "Dataflow.Client.pdb": "sha256-oXGpcN8QvqIjn/2aF7uZuTJYrzAhu3UbQJm6xXNd4NQ="
     }
   },
   "cacheBootResources": true,

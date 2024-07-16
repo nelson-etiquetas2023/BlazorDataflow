@@ -7,7 +7,7 @@ namespace Dataflow.Server.Controllers
 {
     [ApiController]
     [Route("Api/[Controller]")]
-    public class LoadData(int year, int month)
+    public class LoadData() : ControllerBase
     {
         readonly List<PunchDaily> lista = [];
         private readonly string strconn = "Data Source=SERVER-ETIQUETA; Initial Catalog=TIENDA-LABOMBA-SD;User Id=Npino;Password=Jossycar5%;TrustServerCertificate=True;";
@@ -15,7 +15,7 @@ namespace Dataflow.Server.Controllers
         public bool errorStatus = false;
 
         [HttpGet]
-        public List<PunchDaily> GetPonchesControlAsistencia() 
+        public List<PunchDaily> GetPonchesControlAsistencia(int year, int month) 
         {
             try
             {
@@ -41,7 +41,22 @@ namespace Dataflow.Server.Controllers
                         Empleado = reader.GetString("empleado"),
                         Fecha = reader.GetDateTime("fecha"),
                         NameDay = reader.GetString("dia"),
-                        ShiftId = reader.GetInt32("ShiftId")
+                        ShiftId = reader.GetInt32("ShiftId"),
+                        Horario = reader.GetString("horario"),
+                        IndexDay = reader.GetInt32("daysId"),
+                        Entrada = reader.GetString("entrada"),
+                        Salida = reader.GetString("salida"),
+                        Horas_Hor= reader.GetString("horas_hor"),
+                        M1 = reader.GetString("m1"),
+                        M2 = reader.GetString("m2"),
+                        M3 = reader.GetString("m3"),
+                        M4 = reader.GetString("m4"),
+                        Ponches = reader.GetInt64("ponches"),
+                        Tardanza = reader.GetInt32("tardanza"),
+                        Temprano = reader.GetInt32("temprano"),
+                        Hextras = reader.GetDecimal("hextras"),
+                        Mextras = reader.GetInt32("mextras"),
+                        SalaryHour = reader.GetDecimal("SalaryHour")
                     };
                     lista.Add(ponche);
                 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dataflow.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bb12a77cc077da15e64d615575a95dd4be43e6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e89bd5af302322c774f915b85198b69c9051583a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dataflow.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dataflow.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
