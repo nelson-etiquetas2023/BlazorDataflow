@@ -15,7 +15,7 @@ namespace Dataflow.Server.Controllers
         public bool errorStatus = false;
 
         [HttpGet]
-        public List<PunchDaily> GetPonchesControlAsistencia(int year, int month) 
+        public async Task<List<PunchDaily>> GetPonchesControlAsistencia(int year, int month) 
         {
             try
             {
@@ -29,10 +29,10 @@ namespace Dataflow.Server.Controllers
                 comando.Parameters.AddWithValue("@year", year);
                 comando.Parameters.AddWithValue("@month", month);
                 //Abrir la base de datos.
-                conn.Open();
+                await conn.OpenAsync();
                 //Ejecutar el reader que hace la consulta y devuelve un SqlDataReader.
                 SqlDataReader reader = comando.ExecuteReader();
-                while (reader.Read()) 
+                while (await reader.ReadAsync()) 
                 {
                     //creo una instancia del objeto punchdayly para incluirlo en la lista.
                     PunchDaily ponche = new()
@@ -60,8 +60,7 @@ namespace Dataflow.Server.Controllers
                     };
                     lista.Add(ponche);
                 }
-                reader.Close();
-
+               await reader.CloseAsync();
             }
             catch (SqlException ex)
             {

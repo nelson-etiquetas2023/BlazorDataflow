@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\BlazorDataflow\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\components\\loadindicator.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\components\\loadindicator.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedHeight": 312,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "Dataflow.Client\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "Dataflow.Client\\wwwroot\\css\\app.css",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-17T19:07:08.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoadIndicator.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Components\\LoadIndicator.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Components\\LoadIndicator.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Components\\LoadIndicator.razor",
+              "RelativeToolTip": "Dataflow.Client\\Components\\LoadIndicator.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T18:43:29.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Control.razor",
+              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
+              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Control.razor",
+              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
+              "RelativeToolTip": "Dataflow.Client\\Pages\\Control.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T15:32:55.741Z",
+              "EditorCaption": ""
             }
           ]
         },

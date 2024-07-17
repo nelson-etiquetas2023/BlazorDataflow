@@ -5,8 +5,8 @@ C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.GeneratedMSBu
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.AssemblyInfoInputs.cache
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.AssemblyInfo.cs
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.csproj.CoreCompileInputs.cache
+C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.sourcelink.json
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.dll
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\refint\Dataflow.Shared.dll
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.pdb
 C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\ref\Dataflow.Shared.dll
-C:\BlazorDataflow\Dataflow.Shared\obj\Debug\net8.0\Dataflow.Shared.sourcelink.json

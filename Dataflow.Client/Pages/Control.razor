@@ -1,4 +1,8 @@
 ﻿@page "/control"
+@using Dataflow.Client.Components
+@using Dataflow.Shared.Models
+@using System.Text.Json
+
 @inject SweetAlertService Swal
 <PageTitle>Control de Asistencia</PageTitle>
 <div class="container">
@@ -72,6 +76,32 @@
 		</thead>
 		<tbody>
 			<!--Menu de acciones por Empleado-->
+			@if (isLoading == false)
+			{
+				@foreach (var item in listaData)
+				{
+					<tr>
+						<td>@item.IdUser</td>
+						<td>@item.Empleado</td>
+						<td>@item.Fecha.ToShortDateString()</td>
+						<td>@item.NameDay</td>
+						<td>@item.IndexDay</td>
+						<td>@item.ShiftId</td>
+						<td>@item.Horario</td>
+						<td>@item.Entrada</td>
+						<td>@item.Salida</td>
+						<td>@item.M1</td>
+						<td>@item.M2</td>
+						<td>@item.M3</td>
+						<td>@item.M4</td>
+						<td>@item.Ponches</td>
+					</tr>
+				}
+			}
+			else
+			{
+				<LoadIndicator/>	
+			}
 			<tr>
 				<td colspan="10" class="p-3" style="font-weight:600; background-color: #d8d8d8;">
 					Id: 150 - Nombre empleado: Nelson Pino - Departamento: Sistemas.
@@ -146,16 +176,34 @@
 </div>
 
 @code {
+
+
 	private DateTime startDate =
 	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
 
 	private DateTime endDate =
 	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddDays(-1);
 
-	private void LoadData()
+	public List<PunchDaily> ?listaData = [];
+
+	public bool isLoading;
+
+
+
+	private async Task LoadData()
 	{
-		Swal.FireAsync("Carga de Datos...");
-	}
+		isLoading = true;
+		var url = "http://localhost:5226/Api/LoadData?year=2024&month=1";
+		using (var httpClient = new HttpClient())
+		{
+			var respuesta = await httpClient.GetAsync(url);
+			var respuestaString = await respuesta.Content.ReadAsStringAsync();
+
+			listaData = JsonSerializer.Deserialize<List<PunchDaily>>(respuestaString,
+			new System.Text.Json.JsonSerializerOptions(){PropertyNameCaseInsensitive = true});
+		}
+		isLoading = false;
+	}	
 
 	private void searchData()
 	{
