@@ -1,59 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\BlazorDataflow\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\control.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|c:\\blazordataflow\\dataflow.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460D71A8-CC6C-4601-9C6C-7103E25FC8E9}|Dataflow.Client\\Dataflow.Client.csproj|solutionrelative:dataflow.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 312,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 331,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Counter.razor",
-              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Counter.razor",
-              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Counter.razor",
-              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Counter.razor",
-              "RelativeToolTip": "Dataflow.Client\\Pages\\Counter.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T14:37:17.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Control.razor",
-              "DocumentMoniker": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
-              "RelativeDocumentMoniker": "Dataflow.Client\\Pages\\Control.razor",
-              "ToolTip": "C:\\BlazorDataflow\\Dataflow.Client\\Pages\\Control.razor",
-              "RelativeToolTip": "Dataflow.Client\\Pages\\Control.razor",
-              "ViewState": "AQIAACAAAAAAAAAAAAA3wD4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T12:09:24.49Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 209,
+          "DockedHeight": 293,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -63,7 +28,7 @@
           ]
         },
         {
-          "DockedHeight": 293,
+          "DockedHeight": 207,
           "SelectedChildIndex": -1,
           "Children": [
             {

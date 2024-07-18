@@ -55,16 +55,17 @@
 		<button class="mx-2 btn btn-warning" @onclick="searchData"><i class="bi bi-search me-2"></i>Buscar</button>
 	</div>
 	<!--FIN DEL NAVBAR DEL GRID DE ASISTENCIA-->
+	
 	<strong role="status">Registros Encontrados: @totalRows  (@timeQuery.ToString(@"ss\.fff") tiempo transcurrido)</strong>
-
+	<br/>
 
 
 	<!-- TABLA DE DATOS-->
-	<table class="table table-sm" border="1" width="100%" style="white-space: nowrap">
+	<table class="table table-sm table-striped">
 		<thead>
 			<tr>
 				<th style="width:20px;">It.</th>
-				<th style="width:50px;">Horarios</th>
+				<th style="width:80px;">Horarios</th>
 				<th>Inicio</th>
 				<th>Final</th>
 				<th>Fecha</th>
@@ -84,7 +85,44 @@
 			@if (isLoading == false)
 			{
 				int rowNumber = 0;
-				@foreach (var item in listaData)
+				var queryGroup = from lista in listaData
+									group lista by lista.IdUser into grp
+									select grp;
+
+				@foreach (var userGroup in queryGroup)
+				{
+					<br/>
+					<tr style="height:60px" >
+						<td style="font-weight:600; background-color: #d8d8d8;" colspan="14">
+							<strong> Id. : @userGroup.Key - Empleado: @userGroup.Select(x => x.Empleado).FirstOrDefault()</strong><a class="me-2 m-5" href="#" @onclick="@actionGetNotesEmployee" @onclick:preventDefault="true" @onclick:stopPropagation="true"><i class="bi bi-pencil me-1"></i>Notas</a>
+							<a class="me-2" href="#" @onclick="@actionGetNotificationsEmployee" @onclick:preventDefault><i class="bi bi-envelope-arrow-down me-1"></i>Notificar</a>
+							<a class="me-2" href="#" @onclick="@actionGetParametersEmployee" @onclick:preventDefault><i class="bi bi-gear me-1"></i>Parametro</a>
+						</td>
+					</tr>
+					@foreach (var item in userGroup)
+					{
+						rowNumber += 1;
+						<tr>
+							<td>@rowNumber</td>
+							<td class="text-nowrap">@item.Horario</td>
+							<td>@item.Entrada</td>
+							<td>@item.Salida</td>
+							<td>@item.Fecha.ToShortDateString()</td>
+							<td>@item.NameDay</td>
+							<td>@item.M1</td>
+							<td>@item.M2</td>
+							<td>@item.M3</td>
+							<td>@item.M4</td>
+							<td>@item.Ponches</td>
+							<td>@item.Tardanza</td>
+							<td>@item.Temprano</td>
+							<td>@item.SalaryHour</td>
+						</tr>
+					}
+					<tr style="height:40px;margin-bottom:10px;border-collapse:separate;border-spacing:0 10em"><td colspan="14" style="font-weight:600; background-color: #d8d8d8; text-align:center;">Footer</td></tr>
+					<br/>
+				}
+				@* @foreach (var item in listaData)
 				{
 					rowNumber += 1;
 					<tr>
@@ -104,7 +142,7 @@
 						<td>@item.M4</td>
 						<td>@item.Ponches</td>
 					</tr>
-				}
+				} *@
 			}
 			else
 			{
@@ -192,6 +230,7 @@
 	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddDays(-1);
 
 	public List<PunchDaily>? listaData = [];
+	
 	public bool isLoading;
 	private int _year;
 	private int _month;
