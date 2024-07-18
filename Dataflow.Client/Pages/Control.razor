@@ -2,8 +2,9 @@
 @using Dataflow.Client.Components
 @using Dataflow.Shared.Models
 @using System.Text.Json
-
+@using System.Diagnostics
 @inject SweetAlertService Swal
+
 <PageTitle>Control de Asistencia</PageTitle>
 <div class="container">
 	<!-- HEAD PAGE-->
@@ -54,6 +55,10 @@
 		<button class="mx-2 btn btn-warning" @onclick="searchData"><i class="bi bi-search me-2"></i>Buscar</button>
 	</div>
 	<!--FIN DEL NAVBAR DEL GRID DE ASISTENCIA-->
+	<strong role="status">Registros Encontrados: @totalRows  (@timeQuery.ToString(@"ss\.fff") tiempo transcurrido)</strong>
+
+
+
 	<!-- TABLA DE DATOS-->
 	<table class="table table-sm" border="1" width="100%" style="white-space: nowrap">
 		<thead>
@@ -78,9 +83,12 @@
 			<!--Menu de acciones por Empleado-->
 			@if (isLoading == false)
 			{
+				int rowNumber = 0;
 				@foreach (var item in listaData)
 				{
+					rowNumber += 1;
 					<tr>
+						<td>@rowNumber</td>
 						<td>@item.IdUser</td>
 						<td>@item.Empleado</td>
 						<td>@item.Fecha.ToShortDateString()</td>
@@ -177,31 +185,36 @@
 
 @code {
 
-
 	private DateTime startDate =
 	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
 
 	private DateTime endDate =
 	new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddDays(-1);
 
-	public List<PunchDaily> ?listaData = [];
-
+	public List<PunchDaily>? listaData = [];
 	public bool isLoading;
-
-
+	private int _year;
+	private int _month;
+	public int totalRows = 0;
+	TimeSpan timeQuery;
 
 	private async Task LoadData()
 	{
+		_year = startDate.Year;
+		_month = startDate.Month;
 		isLoading = true;
-		var url = "http://localhost:5226/Api/LoadData?year=2024&month=1";
+		var watch = Stopwatch.StartNew();
+		var url = $"http://localhost:5226/Api/LoadData?year={_year}&month={_month}";
 		using (var httpClient = new HttpClient())
 		{
 			var respuesta = await httpClient.GetAsync(url);
 			var respuestaString = await respuesta.Content.ReadAsStringAsync();
-
 			listaData = JsonSerializer.Deserialize<List<PunchDaily>>(respuestaString,
 			new System.Text.Json.JsonSerializerOptions(){PropertyNameCaseInsensitive = true});
 		}
+		watch.Stop();
+		timeQuery  = watch.Elapsed;
+		totalRows = listaData is not null ? listaData.Count() : 0;
 		isLoading = false;
 	}	
 
