@@ -23,11 +23,13 @@
 			<div class="my-3">
 				<div style="display:flex; align-items:center;">
 					<h5 class="fs-6">Fecha Inicio:</h5>
-					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" /><input @bind="startDate" @bind:format="yyyy-MM-dd" type="date" class="form-control my-3" />
+					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" />
+					<input style="width: 500px;" @bind="startDate" @bind:format="yyyy-MM-dd" type="date" class="form-control my-3" />
 				</div>
 				<div style="display:flex; align-items:center;">
 					<h5 class="fs-6">Fecha Final:</h5>
-					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" /><input @bind="endDate" @bind:format="yyyy-MM-dd" type="date" class="form-control" /><br />
+					<img src="lib/bootstrap-icons/icons/calendar-date.svg" style="width:32px; height:42px" class="me-2" />
+					<input style="width: 500px;" @bind="endDate" @bind:format="yyyy-MM-dd" type="date" class="form-control" /><br />
 				</div>
 			</div>
 			<button class="btn btn-primary" @onclick="LoadData"><i class="bi bi-database-fill-down me-2"></i>Cargar Datos</button><br />
