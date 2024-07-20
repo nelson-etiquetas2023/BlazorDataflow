@@ -10,5 +10,8 @@ namespace Dataflow.Shared.Models
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
         public string UserType { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!;
+        public string Departament { get; set; } = null!;
+        public bool Active { get; set; }
     }
 }

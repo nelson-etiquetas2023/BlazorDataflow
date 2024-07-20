@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dataflow.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4255f076f4b8e034629a04c9903363ad162e7476")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+671ffc85eb4f011504c255fce67ac46e7b58f604")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dataflow.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dataflow.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

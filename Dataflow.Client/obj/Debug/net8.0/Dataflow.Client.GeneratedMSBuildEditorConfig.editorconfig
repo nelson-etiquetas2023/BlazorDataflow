@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpY2tHcmlkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/BlazorDataflow/Dataflow.Client/Pages/Usuario/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/BlazorDataflow/Dataflow.Client/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

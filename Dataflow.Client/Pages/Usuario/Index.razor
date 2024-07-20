@@ -1,0 +1,35 @@
+﻿@page "/usuario/index"
+@using Dataflow.Shared.Models
+
+<h3>Modulo de Usuario</h3>
+<button class="btn btn-primary">Crear Usuario</button>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id.</td>
+            <td>Nombre de Usuario</td>
+            <td>Correo Electronico</td>
+            <td>Tipo User</td>
+            <td>Telefono</td>
+            <td>Departamento</td>
+            <td>Activo</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Users)
+        {
+            <td>@item.IdUser</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.UserType</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Departament</td>
+            <td>@item.Active</td>
+        }
+    </tbody>
+
+</table>
+
+@code {
+    List<User> Users = [];
+}
