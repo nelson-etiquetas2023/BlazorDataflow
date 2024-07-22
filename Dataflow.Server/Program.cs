@@ -1,4 +1,8 @@
 using Dataflow.Server.Data;
+using Dataflow.Server.Repository.Implementations;
+using Dataflow.Server.Repository.Interfaces;
+using Dataflow.Server.Service.Contracts;
+using Dataflow.Server.Service.Implementations;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +16,9 @@ builder.Services.AddSwaggerGen();
 
 //Inyeccion del AppDbConext.
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer("name=DefaultConnection"));
+//Inyeccion del Repository Manager.
+builder.Services.AddScoped<IrepositoryManager, RepositoryManager>();
+builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 var app = builder.Build();
 
